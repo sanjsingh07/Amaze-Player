@@ -1,4 +1,4 @@
-Amaze Player is Material Design Music Player.
+## Amaze Player is Material Design Music Player.
 
 ## Features
 - Material design
