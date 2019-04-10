@@ -43,6 +43,7 @@ import com.sanj.amaze.nowplaying.amaze3;
 import com.sanj.amaze.nowplaying.amaze4;
 import com.sanj.amaze.nowplaying.amaze5;
 import com.sanj.amaze.nowplaying.amaze6;
+import com.sanj.amaze.nowplaying.amaze7;
 
 import java.util.ArrayList;
 
@@ -175,6 +176,8 @@ public class NavigationUtils {
                 return new amaze5();
             case Constants.amaze6:
                 return new amaze6();
+            case Constants.amaze7:
+                return new amaze7();
             default:
                 return new amaze1();
         }
@@ -195,6 +198,8 @@ public class NavigationUtils {
                 return 4;
             case Constants.amaze6:
                 return 5;
+            case Constants.amaze7:
+                return 6;
             default:
                 return 2;
         }

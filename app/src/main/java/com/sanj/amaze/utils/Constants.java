@@ -46,6 +46,7 @@ public class Constants {
     public static final String amaze4 = "amaze4";
     public static final String amaze5 = "amaze5";
     public static final String amaze6 = "amaze6";
+    public static final String amaze7 = "amaze7";
 
     public static final String NAVIGATE_SETTINGS = "navigate_settings";
     public static final String NAVIGATE_SEARCH = "navigate_search";

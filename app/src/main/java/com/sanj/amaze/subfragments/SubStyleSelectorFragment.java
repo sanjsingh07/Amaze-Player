@@ -70,7 +70,7 @@ public class SubStyleSelectorFragment extends Fragment {
         styleImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (getArguments().getInt(ARG_PAGE_NUMBER) >= 4) {
+                if (getArguments().getInt(ARG_PAGE_NUMBER) >= 6) {
                     if (isUnlocked()) {
                         setPreferences();
                     } else {
@@ -100,6 +100,9 @@ public class SubStyleSelectorFragment extends Fragment {
             case 5:
                 styleImage.setImageResource(R.drawable.amaze_6_nowplaying_x);
                 break;
+            case 6:
+                styleImage.setImageResource(R.drawable.amaze_7_nowplaying_x);
+                break;
         }
 
         currentStyle = rootView.findViewById(R.id.currentStyle);
@@ -121,7 +124,7 @@ public class SubStyleSelectorFragment extends Fragment {
     }
 
     private void updateLockedStatus() {
-        if (getArguments().getInt(ARG_PAGE_NUMBER) >= 4 && !isUnlocked()) {
+        if (getArguments().getInt(ARG_PAGE_NUMBER) >= 6 && !isUnlocked()) {
             imgLock.setVisibility(View.VISIBLE);
             foreground.setVisibility(View.VISIBLE);
         }
@@ -195,6 +198,8 @@ public class SubStyleSelectorFragment extends Fragment {
                 return Constants.amaze5;
             case 5:
                 return Constants.amaze6;
+            case 6:
+                return Constants.amaze7;
             default:
                 return Constants.amaze3;
         }
